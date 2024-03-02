@@ -10,14 +10,17 @@ const root = ReactDOM.createRoot(rootElement);
 
 // 4) Create a component
 function App() {
-    const name = 'Brett';
     return (
-    <div>
-    My name is:
-    <h1>{name}</h1>
-    </div>
-    );
-}
+        <div className="wrapper">
+          <textarea
+            readOnly
+            maxLength={3}
+            spellCheck
+            style={{backgroundColor: 'gray'}}
+          />
+        </div>
+      );   
+    }
 
 // 5) Show the component on the screen
 root.render(<App />);
